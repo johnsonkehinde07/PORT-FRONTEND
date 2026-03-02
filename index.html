@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Johnson Kehinde | Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -255,7 +255,7 @@
             color: var(--text-primary);
             font-size: 1.8rem;
             cursor: pointer;
-            z-index: 1001;
+            z-index: 1002;
             transition: transform var(--transition-base);
         }
 
@@ -1086,7 +1086,7 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Mobile Responsiveness */
+        /* ===== UPDATED MOBILE RESPONSIVENESS ===== */
         @media (max-width: 992px) {
             .skills-container {
                 grid-template-columns: repeat(2, 1fr);
@@ -1115,28 +1115,72 @@
             }
         }
 
+        /* Tablet and Mobile Fixes */
         @media (max-width: 768px) {
             section {
                 padding: 70px 0;
             }
             
+            /* Fixed Hero Section */
+            .hero {
+                min-height: auto;
+                padding: 120px 0 60px;
+            }
+            
             .hero h1 {
-                font-size: 2.8rem;
+                font-size: 2.5rem !important;
+                line-height: 1.2;
             }
             
             .hero-subtitle {
-                font-size: 1.3rem;
+                font-size: 1.3rem !important;
+                margin-bottom: 15px;
+            }
+            
+            .hero-description {
+                font-size: 1rem !important;
+                margin-bottom: 30px;
+            }
+            
+            .hero-badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+                margin-bottom: 20px;
             }
             
             .hero-btns {
                 flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero-btns .btn {
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 0.95rem;
             }
             
             .hero-stats {
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
                 gap: 20px;
+                margin-top: 40px;
+                justify-content: center;
             }
             
+            .stat-item {
+                text-align: center;
+                min-width: 100px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-label {
+                font-size: 0.8rem;
+            }
+            
+            /* Fixed Mobile Navigation */
             .mobile-menu-btn {
                 display: block;
             }
@@ -1145,15 +1189,17 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                right: 0;
-                bottom: 0;
+                width: 80%;
+                height: 100vh;
                 background: var(--bg-primary);
-                padding: 100px 40px 40px;
-                transform: translateX(100%);
+                padding: 100px 20px 40px;
+                transform: translateX(-100%);
                 opacity: 0;
                 visibility: hidden;
-                transition: all var(--transition-base);
-                z-index: 1000;
+                transition: all 0.3s ease;
+                z-index: 1001;
+                box-shadow: 2px 0 20px rgba(0,0,0,0.5);
+                border-right: 1px solid var(--accent-glow);
             }
             
             nav.active {
@@ -1164,14 +1210,16 @@
             
             nav ul {
                 flex-direction: column;
-                gap: 30px;
-                align-items: center;
+                gap: 25px;
+                align-items: flex-start;
+                padding-left: 20px;
             }
             
             nav a {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
             
+            /* General Mobile Fixes */
             .skills-container {
                 grid-template-columns: 1fr;
             }
@@ -1181,7 +1229,65 @@
             }
             
             .contact-form {
-                padding: 30px;
+                padding: 30px 20px;
+            }
+        }
+
+        /* Small Mobile Fixes */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem !important;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem !important;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .about-container, 
+            .contact-container {
+                gap: 30px;
+            }
+            
+            .skill-category {
+                padding: 30px 20px;
+            }
+            
+            .skill-category h3 {
+                font-size: 1.3rem;
+            }
+            
+            .project-card {
+                padding: 25px 20px;
+            }
+            
+            .contact-form {
+                padding: 25px 20px;
+            }
+            
+            .contact-detail-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            /* Fixed WhatsApp button */
+            a[href*="wa.me"] {
+                width: 100%;
+                text-align: center;
+                padding: 12px 20px !important;
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -1548,10 +1654,10 @@
                     <div class="social-links">
                         <a href="https://www.instagram.com/nigh_ttime01?igsh=MW1nMGFzeGFkbDgxcg%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/ayodeji-kehinde-4b73a6325" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/johnsonkehinde07" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                     
-                    <!-- WhatsApp Button with Correct Number -->
+                    <!-- WhatsApp Button -->
                     <a href="https://wa.me/2349079681750?text=Hi%20Johnson%2C%20I%20saw%20your%20portfolio" 
                        target="_blank"
                        style="background: #25D366; color: white; padding: 12px 24px; border-radius: 50px; display: inline-block; margin-top: 20px; text-decoration: none; font-weight: 500;">
@@ -1572,7 +1678,7 @@
                 <div class="social-links" style="justify-content: center;">
                     <a href="https://www.instagram.com/nigh_ttime01?igsh=MW1nMGFzeGFkbDgxcg%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/ayodeji-kehinde-4b73a6325" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/johnsonkehinde07" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
                 
                 <p class="copyright">© 2026 Johnson Ayodeji Abdulhamid Kehinde. All rights reserved.</p>
@@ -1604,6 +1710,20 @@
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
             document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = mainNav.contains(event.target);
+            const isClickOnMenuBtn = mobileMenuBtn.contains(event.target);
+            
+            if (mainNav.classList.contains('active') && !isClickInsideNav && !isClickOnMenuBtn) {
+                mainNav.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+                document.body.style.overflow = '';
+            }
         });
 
         // Close mobile menu when clicking a link
@@ -1739,7 +1859,7 @@
                 submitBtn.disabled = true;
                 
                 try {
-                    // 🔥 ACTUAL API CALL TO YOUR RENDER BACKEND
+                    // API CALL TO YOUR RENDER BACKEND
                     const response = await fetch('https://port-1-ab5a.onrender.com/api/contact', {
                         method: 'POST',
                         headers: {
