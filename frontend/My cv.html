@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson Ayodeji Kehinde · CV</title>
+     <link rel="icon" type="image/png" href="pictures/logo.png">
+  <link rel="apple-touch-icon" href="pictures/logo.png">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body{
+            background:#eef2f7;
+            color:#1e293b;
+            line-height:1.6;
+            padding:32px 16px;
+        }
+
+        .container{
+            max-width:980px;
+            margin:auto;
+            background:white;
+            padding:44px 48px;
+            border-radius:20px;
+            box-shadow:0 20px 40px -12px rgba(0,0,0,0.15);
+            transition: all 0.2s;
+        }
+
+        header{
+            text-align:center;
+            border-bottom:2px solid #0d6efd;
+            padding-bottom:24px;
+            margin-bottom:32px;
+        }
+
+        h1{
+            color:#0b2b4a;
+            font-size:2.5rem;
+            font-weight:700;
+            letter-spacing:-0.02em;
+            margin-bottom:6px;
+        }
+
+        .badge-sub{
+            display:inline-block;
+            background:#eef6ff;
+            color:#0d6efd;
+            font-weight:500;
+            font-size:0.85rem;
+            padding:4px 18px;
+            border-radius:30px;
+            letter-spacing:0.3px;
+            margin-bottom:12px;
+        }
+
+        .contact{
+            font-size:0.95rem;
+            color:#334155;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:8px 24px;
+            margin-top:8px;
+        }
+
+        .contact a{
+            color:#0d6efd;
+            text-decoration:none;
+            font-weight:500;
+            border-bottom:1px dotted transparent;
+            transition:0.15s;
+        }
+
+        .contact a:hover{
+            border-bottom-color:#0d6efd;
+        }
+
+        .contact .sep{
+            color:#94a3b8;
+        }
+
+        section{
+            margin-bottom:36px;
+        }
+
+        h2{
+            color:#0b2b4a;
+            border-left:5px solid #0d6efd;
+            padding-left:14px;
+            margin-bottom:20px;
+            font-size:1.5rem;
+            font-weight:700;
+            letter-spacing:-0.3px;
+        }
+
+        .item{
+            margin-bottom:26px;
+        }
+
+        .item h3{
+            display:flex;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            font-size:1.1rem;
+            font-weight:700;
+            color:#0b2b4a;
+        }
+
+        .item .meta{
+            color:#475569;
+            font-weight:500;
+            font-size:0.9rem;
+        }
+
+        .item .subhead{
+            font-weight:600;
+            color:#1e293b;
+            margin-top:2px;
+        }
+
+        .item .org{
+            font-weight:600;
+            color:#0d6efd;
+        }
+
+        .item ul{
+            margin-left:20px;
+            margin-top:8px;
+            list-style:disc;
+        }
+
+        .item ul li{
+            margin-bottom:6px;
+            color:#1e293b;
+        }
+
+        .item ul li strong{
+            color:#0b2b4a;
+        }
+
+        .grid-2{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:18px;
+        }
+
+        .card-skill{
+            background:#f8fafc;
+            padding:16px 20px;
+            border-radius:14px;
+            border:1px solid #e9edf2;
+        }
+
+        .card-skill h4{
+            font-size:0.85rem;
+            text-transform:uppercase;
+            letter-spacing:0.3px;
+            color:#64748b;
+            margin-bottom:8px;
+        }
+
+        .card-skill p{
+            font-weight:500;
+            color:#0b2b4a;
+            font-size:0.95rem;
+        }
+
+        .pill-group{
+            display:flex;
+            flex-wrap:wrap;
+            gap:8px 12px;
+            margin-top:4px;
+        }
+
+        .pill{
+            background:#f1f5f9;
+            padding:4px 16px;
+            border-radius:30px;
+            font-size:0.9rem;
+            font-weight:500;
+            color:#1e293b;
+        }
+
+        .pill.blue{
+            background:#dbeafe;
+            color:#1e4a8a;
+        }
+
+        footer{
+            text-align:center;
+            margin-top:28px;
+            padding-top:20px;
+            border-top:1px solid #e2e8f0;
+            color:#64748b;
+            font-size:0.85rem;
+        }
+
+        /* responsive */
+        @media(max-width:680px){
+            .container{
+                padding:24px 18px;
+            }
+            h1{
+                font-size:2rem;
+            }
+            .contact{
+                flex-direction:column;
+                gap:4px;
+            }
+            .item h3{
+                flex-direction:column;
+            }
+            .grid-2{
+                grid-template-columns:1fr;
+            }
+        }
+
+        @media print{
+            body{
+                background:white;
+                padding:0.3in;
+            }
+            .container{
+                box-shadow:none;
+                padding:0;
+            }
+            .card-skill{
+                background:#f9f9f9;
+                border-color:#ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+
+    <h1>Johnson Ayodeji Kehinde</h1>
+    <div class="contact">
+        <span>📧 <a href="mailto:johnson.kehinde@pau.edu.ng">johnson.kehinde@pau.edu.ng</a></span>
+        <span class="sep">|</span>
+        <span>📱 <a href="tel:+2348082420342">+234 808 242 0342</a></span>
+        <span class="sep">|</span>
+        <span>📍 Lagos, Nigeria</span>
+        <span class="sep">|</span>
+        <span>🔗 <a href="https://johnson-ayodeji.vercel.app/" target="_blank">portfolio</a></span>
+        <span class="sep">|</span>
+        <span>💼 <a href="https://www.linkedin.com/in/ayodeji-kehinde-4b73a6325/" target="_blank">linkedin</a></span>
+        <span class="sep">|</span>
+        <span>💻 <a href="https://github.com/johnsonkehinde07" target="_blank">github</a></span>
+    </div>
+</header>
+
+<!-- Education -->
+<section>
+    <h2>🎓 Education</h2>
+    <div class="item">
+        <h3>
+            <span>Pan-Atlantic University, Lagos</span>
+            <span class="meta">Sep. 2023 – Expected 2027</span>
+        </h3>
+        <div class="subhead">B.Sc. Information Science and Media Studies</div>
+        <div style="display:flex; flex-wrap:wrap; gap:6px 24px; margin-top:6px;">
+            <span><strong>CGPA:</strong> 3.26 / 5.00</span>
+            <span><strong>Scholarship:</strong> 6‑month TS Academy award</span>
+        </div>
+        <div style="margin-top:6px; color:#334155;">
+            <strong>Relevant coursework:</strong> Information Systems, Media Studies, Digital Communication, Web Technologies, Data Analysis.
+        </div>
+    </div>
+</section>
+
+<!-- Experience (UPDATED: added Draxivo) -->
+<section>
+    <h2>💼 Experience</h2>
+
+    <!-- NEW: DRAXIVO -->
+    <div class="item">
+        <h3>
+            <span>Lead Developer – Draxivo Event Ticketing Platform</span>
+            <span class="meta">Apr. 2026 – Present</span>
+        </h3>
+        <div class="org">Lagos, Nigeria · Full‑stack development</div>
+        <ul>
+            <li>Built a modern event ticketing platform using <strong>Next.js 14</strong> (App Router) + <strong>Supabase</strong> (PostgreSQL, auth, storage).</li>
+            <li>Integrated <strong>Paystack</strong> for live payment processing; implemented QR‑code ticket generation and scanning for door entry.</li>
+            <li>Deployed on Vercel with custom domain (draxivo.com.ng) – 100% uptime during pilot events.</li>
+            <li>Designed real‑time event dashboard for organizers to manage inventory, sales, and attendee check‑ins.</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>
+            <span>Project Lead – March Madness Ticketing Platform</span>
+            <span class="meta">Mar. 2026 – Present</span>
+        </h3>
+        <div class="org">Lagos, Nigeria · Full‑stack development</div>
+        <ul>
+            <li>Designed and developed a full‑stack event ticketing platform with Node.js + MongoDB, serving <strong>200+ attendees</strong>.</li>
+            <li>Integrated Paystack payment gateway, processed <strong>₦2.6M+</strong> in ticket sales with 0 transaction failures.</li>
+            <li>Built QR‑code generation + verification system for secure door entry; scanned <strong>100+ guests</strong> in under 2 hours.</li>
+            <li>Deployed and maintained live services (Render, Netlify, custom DNS) – 99.98% uptime.</li>
+            <li>Managed end‑to‑end customer support, platform updates, and real‑time inventory during sales.</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>
+            <span>Research Team Lead – Digital E‑Commerce Systems Study</span>
+            <span class="meta">Jan. 2026 – Apr. 2026</span>
+        </h3>
+        <div class="org">Pan-Atlantic University · Academic research</div>
+        <ul>
+            <li>Led a 4‑person team analysing modern e‑commerce platforms (transaction flows, inventory, UX).</li>
+            <li>Coordinated research planning, task allocation, and final presentation delivery.</li>
+            <li>Presented data‑driven recommendations to improve customer retention and conversion.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Skills (updated) -->
+<section>
+    <h2>🧰 Technical Skills</h2>
+    <div class="grid-2">
+        <div class="card-skill">
+            <h4>Web & backend</h4>
+            <p>JavaScript (ES6+), Node.js, Express, MongoDB, REST APIs, HTML5, CSS3</p>
+        </div>
+        <div class="card-skill">
+            <h4>Payments & integrations</h4>
+            <p>Paystack, Resend API, QR‑code generation, Postman, webhooks</p>
+        </div>
+        <div class="card-skill">
+            <h4>Deployment & tools</h4>
+            <p>Render, Netlify, Vercel, Truehost DNS, Git, GitHub, VS Code</p>
+        </div>
+        <div class="card-skill">
+            <h4>Creative & design</h4>
+            <p>Figma, Adobe Premiere Pro, After Effects, Illustrator, Canva</p>
+        </div>
+    </div>
+    <div style="margin-top:16px;">
+        <div class="pill-group">
+            <span class="pill blue">full‑stack development</span>
+            <span class="pill blue">payment integration</span>
+            <span class="pill blue">live production</span>
+            <span class="pill">UI/UX prototyping</span>
+            <span class="pill">video editing</span>
+            <span class="pill">team leadership</span>
+        </div>
+    </div>
+</section>
+
+<!-- Soft skills + extras -->
+<section>
+    <h2>🌟 Core competencies</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px;">
+        <div><span style="font-weight:600;">•</span> Leadership & collaboration</div>
+        <div><span style="font-weight:600;">•</span> Client‑facing communication</div>
+        <div><span style="font-weight:600;">•</span> Problem‑solving under pressure</div>
+        <div><span style="font-weight:600;">•</span> Adaptability & fast learning</div>
+        <div><span style="font-weight:600;">•</span> Time management</div>
+        <div><span style="font-weight:600;">•</span> Research & data synthesis</div>
+    </div>
+</section>
+
+<!-- Extracurricular (updated) -->
+<section>
+    <h2>📌 Extracurricular & leadership</h2>
+    <ul style="margin-left:20px;">
+        <li><strong>Student project lead</strong> – March Madness ticketing (real‑world production system).</li>
+        <li><strong>Research collaboration</strong> – e‑commerce systems, presented to faculty panel.</li>
+        <li><strong>Digital content creator</strong> – video editing & motion graphics for student initiatives.</li>
+        <li><strong>TS Academy scholar</strong> – advanced training in web technologies & professional development.</li>
+    </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Johnson Ayodeji Kehinde · available for internship &amp; freelance</p>
+</footer>
+
+</div>
+
+</body>
+</html>
